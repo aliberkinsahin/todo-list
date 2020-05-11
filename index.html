@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <div class="container" style="margin-top: 20px; max-width: 800px;">
+        <div class="card row">
+            <div class="card-header">Todo List</div>
+            <div class="card-body">
+                <form id="todo-form" name="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="todo" id="todo" class="form-control" placeholder="Add a Todo..." autocomplete="off">
+                        </div>
+                    </div>
+                    <button type="submit" id="add-todo" class="btn btn-outline-warning">Add Todo</button>
+                </form>
+                <hr>
+                <!-- <div class="alert alert-danger" role="alert">
+                            This is a <strong>danger</strong> alert—check it out!
+                        </div> -->
+            </div>
+            <div class="card-body" style="margin-top: 1px;">
+                <hr>
+                <h5 class="card-title" id="tasks-title">Active Todos</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="filter" id="filter" class="form-control" placeholder="Filter a Todo..." autocomplete="off">
+                    </div>
+                </div>
+
+                <hr>
+
+                <ul class="list-group">
+                    <!-- <li class="list-group-item d-flex justify-content-between">
+                            Todo 1
+                                <a href="#" class="delete-item">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+                            </li> -->
+                </ul>
+                <hr>
+                <a href="#" id="clear-todos" class="clear-todos btn btn-outline-danger">Clear All Todos</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
